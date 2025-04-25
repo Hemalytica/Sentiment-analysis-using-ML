@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import nltk
+nltk.download('punkt')
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from wordcloud import WordCloud
@@ -15,7 +16,6 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 import string
 
 # Download NLTK resources
-nltk.download('punkt')
 nltk.download('stopwords')
 
 # Cache stopwords for performance
